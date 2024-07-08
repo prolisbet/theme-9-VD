@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Любимые блюда Лизки</title>
+    <style>
+        h1 {
+            text-align: center;
+            position: relative;
+            color: #FFE7FD; /* Задаём цвет текста для заголовка h1 */
+        }
+        h1::before, h1::after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem; /* Размер значков */
+        }
+
+        h1::before {
+            content: "\1F95D \1F355 \1F955 \1F35E \1F34A \1F32D \1F957 \1F34B \1F35D \1F372 \1F35F \1F957 \1F32E \1F35B \1F354 \1F373 \1F35C"; /* Набор значков слева */
+            left: 0;
+        }
+        h1::after {
+            content: "\1F353 \1F36A \1F35A \1F32F \1F345 \1F348 \1F352 \1F951 \1F351 \1F35B \1F37D \1F959 \1F35C \1F372 \1F32A \1F35F \1F349"; /* Набор значков справа */
+            right: 0;
+        }
+        hr {
+            border: none;
+            height: 3px; /* Увеличить высоту hr */
+            background-color: #FFE7FD; /* Цвет hr */
+            margin-bottom: 30px;
+        }
+        body {
+            background-color: #5247A6; /* Задаём цвет фона для всей страницы */
+        }
+        .food-link {
+            text-decoration: none;
+        }
+        table {
+            width: 1200px;
+            height: 250px;
+            border-collapse: collapse;
+            background-color: #FFE7FD;
+            margin: auto;
+            margin-bottom: 30px;
+            font-size: 20px
+        }
+        th, td {
+            border: 3px solid #5247A6;
+            text-align: center;
+        }
+        .image-cell {
+            height: 250px; /* Задаём ту же высоту, что и для всей таблицы */
+            padding: 0; /* Убираем внутренние отступы */
+        }
+        .image-cell img {
+            max-width: 100%; /* Ограничиваем максимальную ширину изображения */
+            max-height: 100%; /* Ограничиваем максимальную высоту изображения */
+        }
+        h4 {
+            color: #FFE7FD
+        }
+        .footer {
+            margin-bottom: 30px; /* Отступ внизу страницы */
+        }
+        .footer a {
+            color: #FFE7FD; /* Задаём цвет ссылки */
+            text-decoration: none; /* Убираем подчеркивание, если нужно */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Любимые блюда Лизки</h1>
+        <hr>
+        <table>
+            <tr>
+                <th>Название блюда</th>
+                <th>Оценка</th>
+                <th>Ссылка на рецепт</th>
+                <th>Фото блюда</th>
+            </tr>
+            <tr>
+                <td>Лазанья</td>
+                <td>10/10</td>
+                <td>
+                    <a href="https://eda.ru/recepty/pasta-picca/lazanja-klassicheskaja-s-mjasom-31799"
+                    target="_blank"
+                    class="food-link">
+                        Лазанья классическая с мясом, рецепт</a>
+                </td>
+                <td class="image-cell">
+                    <img src="Лазанья.jpg"
+                         height="200px" alt="Лазанья классическая с мясом" title="Лазанья классическая с мясом">
+                </td>
+            </tr>
+            <tr>
+                <td>Паста с лисичками</td>
+                <td>10/10</td>
+                <td>
+                    <a href="https://eda.ru/recepty/pasta-picca/pasta-s-lisichkami-79868"
+                    target="_blank"
+                    class="food-link">
+                        Паста с лисичками, рецепт</a>
+                </td>
+                <td class="image-cell">
+                    <img src="Паста с лисичками.jpg"
+                         height="200px" alt="Паста с лисичками" title="Паста с лисичками">
+                </td>
+            </tr>
+            <tr>
+                <td>Том Ям</td>
+                <td>10/10</td>
+                <td>
+                    <a href="https://eda.ru/recepty/supy/tom-jam-47979"
+                    target="_blank"
+                    class="food-link">
+                        Том Ям, рецепт</a>
+                </td>
+                <td class="image-cell">
+                    <img src="Том Ям.jpg"
+                         height="200px" alt="Том Ям" title="Том Ям">
+                </td>
+            </tr>
+            <tr>
+                <td>Салат с уткой и грушей</td>
+                <td>10/10</td>
+                <td>
+                    <a href="https://7days.ru/lifestyle/food/salat-s-utkoy-i-karamelnoy-grushey-retsept-ot-aleksandra-belkovicha.htm"
+                    target="_blank"
+                    class="food-link">
+                        Салат с уткой и карамельной грушей, рецепт</a>
+                </td>
+                <td class="image-cell">
+                    <img src="Салат с уткой и грушей.jpg"
+                         height="200px" alt="Салат с уткой и грушей" title="Салат с уткой и грушей">
+                </td>
+            </tr>
+            <tr>
+                <td>Корейка молодого барашка</td>
+                <td>10/10</td>
+                <td>
+                    <a href="https://eda.ru/recepty/osnovnye-blyuda/koreyka-molodogo-barashka-137861"
+                    target="_blank"
+                    class="food-link">
+                        Корейка молодого барашка, рецепт</a>
+                </td>
+                <td class="image-cell">
+                    <img src="Корейка молодого барашка.jpg"
+                         height="200px" alt="Корейка молодого барашка" title="Корейка молодого барашка">
+                </td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+
+    <div class="footer">
+        <h4>Контактная информация</h4>
+        <a href="" target="_blank">
+            Ссылка на репозиторий в Github</a>
+    </div>
+
+
+</body>
+</html>
