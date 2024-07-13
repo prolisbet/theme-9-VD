@@ -1,0 +1,83 @@
+/*body {*/
+/*    background-color: crimson;*/
+/*}*/
+
+/*p {*/
+/*    background-color: firebrick;*/
+/*    font-family: Times New Roman;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    width: 200px;*/
+/*    padding: 10px;*/
+/*    border: 1px solid black;*/
+/*    margin: 10px;*/
+
+/*}*/
+
+/*#test {*/
+/*    background-color: royalblue;*/
+/*}*/
+
+/*.text {*/
+/*    background-color: olivedrab;*/
+/*    font-family: Century Gothic;*/
+/*    color: white;*/
+/*    border-radius: 10px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+h1::first-letter {
+    color: rebeccapurple;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: lavender;
+}
+
+h1::after {
+    content: 'Город ';
+    color: deeppink;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+div:hover {
+    background-color: #0080ff;
+    width: 150px;
+    height: 150px;
+/*    добавляем свойство для плавности:*/
+    transition: 1s;
+}
+
+/*    position: relative;*/
+/*    top: 500px;*/
+/*    left: 300px;*/
+
+/*    position: absolute;*/
+/*    bottom: 100px;*/
+/*    right: 100px;*/
+
+/*    position: fixed;*/
+/*    bottom: 100px;*/
+/*    right: 100px;*/
+/*}*/
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: olivedrab;
+}
+
+a:active {
+    color: royalblue;
+}
