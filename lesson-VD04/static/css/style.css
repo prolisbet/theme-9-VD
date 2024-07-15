@@ -1,0 +1,68 @@
+.cards-container {
+    display: flex;
+}
+
+.card {
+    margin: 40px;
+    width: 350px;
+    height: 530px;
+    background-color: lavender;
+    border-radius: 60px;
+    transition: 1s
+}
+
+.card:hover {
+    background-color: plum;
+    transition: 1s
+}
+
+.photo {
+    padding-top: 50px;
+    height: 50%;
+    display: flex;
+    justify-content: center; /* центрирование по горизонтали */
+    align-items: center;   /*   центрирование по вертикали*/
+}
+
+.info {
+    height: 30%;
+    padding: 40px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+    transition: 1s
+}
+
+img:hover {
+    height: 120%;
+    transition: 1s
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    transition: 1s
+}
+
+h2:hover {
+    color: rebeccapurple;
+    font-size: 21px;
+    transition: 1s
+}
+
+p {
+    font-size: 12px;
+    transition: 1s
+}
+
+p:hover {
+    color: rebeccapurple;
+    font-size: 15px;
+    transition: 1s
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="cards-container">
+    <div class="card">
+
+        <div class="photo">
+<!--            <img src="potter-1-467x697.jpg">-->
+            <img src="{{ url_for('static', filename='image/potter-1-467x697.jpg') }}" alt="Potter">
+        </div>
+
+        <div class="info">
+            <h2>Гарри Джеймс Поттер</h2>
+            <p> Пол: мужской <br>
+                Дата рождения: 31.07.1980<br>
+                Город: Годрикова впадина<br>
+                Email: harrypotter80@gmail.com </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="photo">
+<!--            <img src="39cc8616dce4fbfb7eabdda0473f3686.jpg">-->
+            <img src="{{ url_for('static', filename='image/39cc8616dce4fbfb7eabdda0473f3686.jpg') }}" alt="Granger">
+        </div>
+
+        <div class="info">
+            <h2>Гермиона Джин Грейнджер</h2>
+            <p> Пол: женский <br>
+                Дата рождения: 19.09.1979<br>
+                Город: Лондон<br>
+                Email: hermionegreynger79@gmail.com </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="photo">
+<!--            <img src="scale_1200.png">-->
+            <img src="{{ url_for('static', filename='image/scale_1200.png') }}" alt="Weasley">
+        </div>
+
+        <div class="info">
+            <h2>Рональд Билиус Уизли</h2>
+            <p> Пол: мужской <br>
+                Дата рождения: 01.03.1980<br>
+                Город: Оттери-Сент-Кэчпоул<br>
+                Email: ronweasley80@gmail.com </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
