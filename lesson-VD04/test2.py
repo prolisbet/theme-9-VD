@@ -12,7 +12,7 @@ def heroes():
                  "Как надо мной проходит",
                  "Зеленая вода."]
     }
-    return render_template('shablon.html', **context)
+    return render_template('base.html', **context)
 
 
 @app.route('/shablon/')

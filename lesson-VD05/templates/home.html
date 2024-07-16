@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block style %}
+    <style>
+        .row {
+            row-gap: 3rem
+        }
+        .card {
+            width: 20rem;
+            height: 35rem;
+        }
+        .card-img-top {
+            height: 60%;
+            object-fit: scale-down;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <img src="../static/image/index_0.jpg" class="card-img-top" alt="fantasy">
+        <p class="p-5">
+            Добро пожаловать в мир фэнтези! Откройте для себя удивительные приключения, загадочные миры и эпические битвы. Наш сайт создан для тех, кто любит погружаться в сказочные вселенные и мечтать о невероятном. Присоединяйтесь к нам и станьте частью нашего волшебного сообщества!
+        </p>
+        <hr>
+        <div class="row">
+            <span class="text-center h2 fs-1" style="background-color: #ADD8E6; font-family: 'Gabriola'; margin-bottom: 5rem">
+                Анонс событий
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../static/image/index_1.png" class="card-img-top" alt="dragons">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Фестиваль Драконов</strong> <br>(15 ноября)</h5>
+                        <p class="card-text">
+                            Посетите грандиозное событие, где можно увидеть величественных драконов, принять участие в мастер-классах по укрощению драконов и насладиться феерическим шоу.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../static/image/index_2.jpeg" class="card-img-top" alt="mages">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Турнир Магов</strong> <br>(5 декабря)</h5>
+                        <p class="card-text">
+                            Примите участие или просто наблюдайте за захватывающими дуэлями магов из разных королевств, соревнующихся за титул Великого Архимага.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="../static/image/index_3.png" class="card-img-top" alt="elves">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Ночь Эльфийской Музыки</strong> <br>(20 декабря)</h5>
+                        <p class="card-text">
+                            Погрузитесь в чарующую атмосферу под звуки эльфийских арф и флейт, насладитесь танцами и песнями в исполнении лучших эльфийских артистов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
