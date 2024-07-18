@@ -14,11 +14,11 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(60), nullable=False)
 
     def set_password(self, password):
-        """Hash and set the user's password."""
+        # Хэшировать и установить пароль пользователя
         self.password = bcrypt.generate_password_hash(password).decode('utf-8')
 
     def check_password(self, password):
-        """Check if the provided password matches the stored hashed password."""
+        # Сравнить хэшированный пароль с паролем, введенным пользователем
         return bcrypt.check_password_hash(self.password, password)
 
     def __repr__(self):
