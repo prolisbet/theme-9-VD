@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+Account
+{% endblock %}
+
+{% block content %}
+<h1>This is your account page!</h1>
+
+<form method="post">
+    <button type="submit" name="edit_profile" value="edit">Edit Profile</button>
+</form>
+
+{% if request.method == 'POST' and request.form.get('edit_profile') == 'edit' %}
+    <form method="post">
+        <button type="submit" name="change_name" value="change_name">Change Name</button>
+        <button type="submit" name="change_email" value="change_email">Change Email</button>
+        <button type="submit" name="change_password" value="change_password">Change Password</button>
+    </form>
+{% elif request.method == 'POST' and request.form.get('change_name') == 'change_name' %}
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.new_username.label }} {{ form.new_username() }}<br>
+        {{ form.submit() }}
+    </form>
+{% elif request.method == 'POST' and request.form.get('change_email') == 'change_email' %}
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.new_email.label }} {{ form.new_email() }}<br>
+        {{ form.submit() }}
+    </form>
+{% elif request.method == 'POST' and request.form.get('change_password') == 'change_password' %}
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.current_password.label }} {{ form.current_password() }}<br>
+        {{ form.new_password.label }} {{ form.new_password() }}<br>
+        {{ form.confirm_password.label }} {{ form.confirm_password() }}<br>
+        {{ form.submit() }}
+    </form>
+{% endif %}
+
+{% endblock %}
