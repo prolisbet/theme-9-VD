@@ -21,7 +21,7 @@ def heroes2():
         "caption": "Люди",
         "link": "Отправить сообщение"
     }
-    return render_template('index.html', **context)
+    return render_template('index7.html', **context)
 
 
 if __name__ == '__main__':
