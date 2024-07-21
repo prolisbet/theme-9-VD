@@ -9,20 +9,41 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Quotes App</a>
+    </nav>
+
     <div class="container mt-5">
         <h1 class="text-center mb-4">Случайные цитаты на каждый день</h1>
 
-        <button type="submit">Получить цитату</button>
+        <form method="POST" class="text-center">
+            <button type="submit" class="btn btn-primary">Получить цитаты</button>
+        </form>
 
-        <div class="result">
-            {% if news %}
-                <h2>Цитата:</h2>
-                <ul>
-                    {% for article in news %}
-                       <li><a href="{{ article['url'] }}"> {{ article['title'] }} </a></li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+        <div class="row mt-4">
+            <div class="col-md-6">
+                {% if qotd %}
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Цитата дня:</h2>
+                            <p class="card-text">{{ qotd['quote']['body'] }}</p>
+                            <p class="card-text"><strong>{{ qotd['quote']['author'] }}</strong></p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="col-md-6">
+                {% if random_quote %}
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Случайная цитата:</h2>
+                            <p class="card-text">{{ random_quote[0]['q'] }}</p>
+                            <p class="card-text"><strong>{{ random_quote[0]['a'] }}</strong></p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
         </div>
     </div>
 
